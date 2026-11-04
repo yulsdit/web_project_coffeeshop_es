@@ -120,12 +120,12 @@ body{
 }
 
 .reservation {
-    padding: 100px 30px 120px;
-    background-color: #FFD6C5;
-    background-image: url('background_reservation.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  padding: 100px 30px 120px;
+  background-color: #FFD6C5;
+  background-image: url('../images/background_reservation.svg'); /* Ruta corregida */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
   .reservation-title {
