@@ -50,7 +50,7 @@ body{
 
 .header-title{
   max-width: 709px;
-  margin: 143px 0 0 0; 
+  margin: 143px 0 0 0;
   color: #000000;
 }
 
@@ -120,33 +120,38 @@ body{
 }
 
 .reservation {
-    padding: 80px 30px;
+    padding: 100px 30px 120px;
+    background-color: #FFD6C5;
+    background-image: url('background_reservation.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-   
+
   .reservation-title {
     margin: 0 0 40px;
     font-size: 44px;
     line-height: 52px;
     font-weight: 500;
   }
-   
+
   .reservation-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 400px;
   }
- 
+
   .form-field {
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
-   
+
   .form-label {
     font-weight: 500;
   }
-   
+
   .form-field input {
     width: 100%;
     padding: 12px;
@@ -154,12 +159,12 @@ body{
     border: 1px solid #6f6f6f;
     border-radius: 4px;
   }
-   
+
   .form-field input:focus {
     outline: 2px solid #ff976b;
     border-color: #ff976b;
   }
-   
+
   /* Checkbox de términos */
   .form-checkbox-label {
     display: flex;
@@ -168,7 +173,7 @@ body{
     font-size: 14px;
     color: #6f6f6f;
   }
-   
+
   .form-checkbox-label a {
     color: #000000;
   }
@@ -182,10 +187,11 @@ body{
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: opacity 0.3s ease;
   }
-   
+
   .form-button:hover {
-    background-color: #ff976b;
+    opacity: 0.7;
   }
 
   .footer {
@@ -194,14 +200,17 @@ body{
     align-items: flex-end;
     padding: 60px 30px 40px;
     border-top: 1px solid #e5e5e5;
+    background-color: #D35722;
+    position: relative;
+    overflow: hidden;
   }
-   
+
   .footer-title {
     margin: 0 0 16px;
     font-size: 18px;
     font-weight: 500;
   }
-   
+
   .footer-links {
     display: flex;
     gap: 20px;
@@ -209,20 +218,20 @@ body{
     padding: 0;
     list-style: none;
   }
-   
+
   .footer-links a {
     color: #000000;
     text-decoration: none;
+    transition: color 0.3s ease;
   }
-   
+
   .footer-links a:hover {
-    color: #ff976b;
+    color: #FFD6C5;
   }
-   
+
   .footer-copyright {
     margin: 0;
     font-size: 14px;
     color: #6f6f6f;
   }
 
-  
