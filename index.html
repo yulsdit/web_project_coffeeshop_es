@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Triple Espresso".</title>
+    <title>Triple Espresso</title>
     <meta name="description" content="Café de especialidad y zona de estudio en Triple Peaks. Reserva tu mesa en línea. Avenida del Éxito 200.">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- Rutas corregidas hacia la carpeta styles -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -17,84 +18,88 @@
     <header class="header">
         <div class="header-top">
             <a href="/" aria-label="Triple Peaks Coffee, inicio">
+                <!-- Ruta corregida hacia la carpeta images -->
                 <img
                     class="logo"
-                    src="logo_coffeeshop_dark.svg"
+                    src="./images/logo_coffeeshop_dark.svg"
                     alt="Logo de Triple Peaks Coffee"
                     width="105"
                     height="39"
-              >
+                >
             </a>
-          
+
             <nav class="nav" aria-label="Principal">
               <div class="nav-links">
                 <a href="#reservation" class="nav-link">Reservar una mesa</a>
                 <a href="#contacts" class="nav-link">Contactos</a>
               </div>
             </nav>
-          </div>
+        </div>
 
-            <h1 class="header-title">
-                <span class="span-accent">Café de especialidad</span>
-                <span class="header-title-text">en Triple Peaks</span>
-            </h1>
-            <p class="header-description">
-                ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café para darte energía y motivar tu creatividad.
-            </p>
+        <h1 class="header-title">
+            <span class="span-accent">Café de especialidad</span>
+            <span class="header-title-text">en Triple Peaks</span>
+        </h1>
+        <p class="header-description">
+            ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café para darte energía y motivar tu creatividad.
+        </p>
 
-            <img class="header-image" src="inside_coffee_shop.png" alt="Interior de la cafetería Triple Peaks con mesas de estudio" width="1200" height="600" decoding="async">
-       
-            <div class="header-info">
-                <div class="header-hours">
-                        <p class="info-text"><strong>Horario:</strong></p>
-                        <p class="info-text">Lunes a Viernes: 10:00 a 19:00 h</p>
-                        <p class="info-text">Sábados y Domingos: 11:00 a 18:00 h</p>
+        <!-- Ruta corregida hacia la carpeta images -->
+        <img class="header-image" src="./images/inside_coffee_shop.png" alt="Interior de la cafetería Triple Peaks con mesas de estudio" width="1200" height="600" decoding="async">
+
+        <div class="header-info">
+            <div class="header-hours">
+                <p class="info-text"><strong>Horario:</strong></p>
+                <p class="info-text">Lunes a Viernes: 10:00 a 19:00 h</p>
+                <p class="info-text">Sábados y Domingos: 11:00 a 18:00 h</p>
+            </div>
+            <address class="info-text">Avenida del Éxito 200, Ciudad Triple Peaks</address>
+        </div>
+    </header>
+
+    <main class="content">
+        <section id="reservation" class="reservation" aria-labelledby="reservation-title">
+            <h2 class="reservation-title" id="reservation-title">Reservar una mesa</h2>
+            <form class="reservation-form" action="#" method="post">
+                <div class="form-field">
+                    <label class="form-label" for="name">Nombre *</label>
+                    <input id="name" type="text" name="name" placeholder="Nombre" autocomplete="name" required>
                 </div>
-                <address class="info-text">Avenida del Éxito 200, Ciudad Triple Peaks</address>
-            </div>
-        </header>
-        <main class="content">
-            <section id="reservation" class="reservation" aria-labelledby="reservation-title">
-                <h2 class="reservation-title" id="reservation-title">Reservar una mesa</h2>
-                <form class="reservation-form" action="#" method="post">
-                    <div class="form-field">
-                        <label class="form-label" for="name">Nombre *</label>
-                        <input id="name" type="text" name="name" placeholder="Nombre" autocomplete="name" required>
-                    </div>
- 
-                    <div class="form-field">
-                        <label class="form-label" for="guests">Número de comensales (1-8) *</label>
-                        <input id="guests" type="number" name="guests" placeholder="1-8" min="1" max="8" inputmode="numeric" required>
-                    </div>
- 
-                    <div class="form-field">
-                        <label class="form-label" for="datetime">Fecha y hora *</label>
-                        <input id="datetime" type="datetime-local" name="datetime" required>
-                    </div>
- 
-                    <div class="form-field">
-                        <label class="form-label" for="email">Tu correo electrónico *</label>
-                        <input id="email" type="email" name="email" placeholder="email@email.com" autocomplete="email" required>
-                    </div>
- 
-                    <label class="form-checkbox-label" for="terms">
-                        <input id="terms" type="checkbox" name="terms" required>
-                        Acepto los <a href="/terminos">términos de uso</a>
-                    </label>
- 
-                    <button type="submit" class="form-button">Reservar una mesa</button>
-                </form>
-            </section>
-        </main>
-        <footer id="contacts" class="footer">
-            <div class="footer-social">
-                <h2 class="footer-title">Redes sociales</h2>
-                <ul class="footer-links">
-                    <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                    <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                </ul>
-            </div>
-            <p class="footer-copyright"><small>&copy; 2026 Julieta Rodriguez Guzman</small></p>
-        </footer>
+
+                <div class="form-field">
+                    <label class="form-label" for="guests">Número de comensales (1-8) *</label>
+                    <input id="guests" type="number" name="guests" placeholder="1-8" min="1" max="8" inputmode="numeric" required>
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label" for="datetime">Fecha y hora *</label>
+                    <input id="datetime" type="datetime-local" name="datetime" required>
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label" for="email">Tu correo electrónico *</label>
+                    <input id="email" type="email" name="email" placeholder="email@email.com" autocomplete="email" required>
+                </div>
+
+                <label class="form-checkbox-label" for="terms">
+                    <input id="terms" type="checkbox" name="terms" required>
+                    Acepto los <a href="/terminos">términos de uso</a>
+                </label>
+
+                <button type="submit" class="form-button">Reservar una mesa</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contacts" class="footer">
+        <div class="footer-social">
+            <h2 class="footer-title">Redes sociales</h2>
+            <ul class="footer-links">
+                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+        </div>
+        <p class="footer-copyright"><small>&copy; 2026 Julieta Rodriguez Guzman</small></p>
+    </footer>
 </body>
 </html>
