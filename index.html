@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triple Espresso</title>
     <meta name="description" content="Café de especialidad y zona de estudio en Triple Peaks. Reserva tu mesa en línea. Avenida del Éxito 200.">
-    <!-- Rutas corregidas hacia la carpeta styles -->
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,47 +58,63 @@
 
     <main class="content">
         <section id="reservation" class="reservation" aria-labelledby="reservation-title">
-            <h2 class="reservation-title" id="reservation-title">Reservar una mesa</h2>
-            <form class="reservation-form" action="#" method="post">
-                <div class="form-field">
-                    <label class="form-label" for="name">Nombre *</label>
-                    <input id="name" type="text" name="name" placeholder="Nombre" autocomplete="name" required>
-                </div>
+                <h2 class="reservation-title" id="reservation-title">Reservar una mesa</h2>
+                <form class="reservation-form" action="#" method="post">
+                    <fieldset class="reservation-fieldset">
+                        <div class="form-field">
+                            <label class="form-label" for="name">Nombre *</label>
+                            <input id="name" type="text" name="name" placeholder="Nombre" autocomplete="name" required>
+                        </div>
 
-                <div class="form-field">
-                    <label class="form-label" for="guests">Número de comensales (1-8) *</label>
-                    <input id="guests" type="number" name="guests" placeholder="1-8" min="1" max="8" inputmode="numeric" required>
-                </div>
+                        <div class="form-field">
+                            <label class="form-label" for="guests">Número de comensales (1-8) *</label>
+                            <input id="guests" type="number" name="guests" placeholder="1-8" min="1" max="8" inputmode="numeric" required>
+                        </div>
 
-                <div class="form-field">
-                    <label class="form-label" for="datetime">Fecha y hora *</label>
-                    <input id="datetime" type="datetime-local" name="datetime" required>
-                </div>
+                        <div class="form-field">
+                            <label class="form-label" for="datetime">Fecha y hora *</label>
+                            <input id="datetime" type="datetime-local" name="datetime" required>
+                        </div>
 
-                <div class="form-field">
-                    <label class="form-label" for="email">Tu correo electrónico *</label>
-                    <input id="email" type="email" name="email" placeholder="email@email.com" autocomplete="email" required>
-                </div>
+                        <div class="form-field">
+                            <label class="form-label" for="email">Tu correo electrónico *</label>
+                            <input id="email" type="email" name="email" placeholder="email@email.com" autocomplete="email" required>
+                        </div>
 
-                <label class="form-checkbox-label" for="terms">
-                    <input id="terms" type="checkbox" name="terms" required>
-                    Acepto los <a href="/terminos">términos de uso</a>
-                </label>
+                        <label class="form-checkbox-label" for="terms">
+                            <input id="terms" type="checkbox" name="terms" required>
+                            Acepto los <a href="/terminos">términos de uso</a>
+                        </label>
 
-                <button type="submit" class="form-button">Reservar una mesa</button>
-            </form>
-        </section>
+                        <button type="submit" class="form-button">Reservar una mesa</button>
+                    </fieldset>
+                </form>
+            </section>
     </main>
 
     <footer id="contacts" class="footer">
-        <div class="footer-social">
-            <h2 class="footer-title">Redes sociales</h2>
-            <ul class="footer-links">
-                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            </ul>
-        </div>
-        <p class="footer-copyright"><small>&copy; 2026 Julieta Rodriguez Guzman</small></p>
-    </footer>
+            <div class="footer-logo-container">
+                <div class="footer-circle"></div>
+                <img class="footer-logo" src="./images/logo_coffeeshop_light.svg" alt="Logo de Triple Peaks Coffee" width="105" height="39">
+            </div>
+            <div class="footer-social">
+                <h2 class="footer-title">Redes sociales</h2>
+                <ul class="footer-links">
+                    <li>
+                        <a href="#">
+                            <img src="./images/facebook_white.svg" alt="Icono de Facebook" width="16" height="16">
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/instagram_white.svg" alt="Icono de Instagram" width="16" height="16">
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer-copyright"><small>&copy; 2026 Julieta Rodriguez Guzman</small></p>
+        </footer>
 </body>
 </html>
